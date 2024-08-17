@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.navbar{
+    background-color:rgb(255, 94, 0);
+    padding: 20px;
+    font-size: larger;
+    color: white;
+}
+.container{
+    padding: 10px;
+}
+.book-container{
+    padding: 10px;
+    margin: 20px;
+    background-color:black;
+    width: 25%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.book-container h2{
+    color: rgb(255, 94, 0);
+    padding: 10px;
+}
+.book-container h5{
+    padding: 10px;
+    color: greenyellow;
+}
+.book-container button{
+    color: black;
+    background-color: rgb(255, 94, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+.add-button{
+    color: white;
+    background-color: rgb(255, 94, 0);
+    border: none;
+    border-radius: 100%;
+    padding: 20px 30px;
+    font-size: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.popup-overlay{
+    background-color: gray;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border: none;
+    z-index: 1;
+    display: none;
+}
+.popup-dialog{
+    background-color: rgb(255, 94, 0);
+    color: black;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    padding: 20px;
+    z-index: 2;
+    display: none;
+}
+.popup-dialog h2{
+    padding: 20px;
+}
+.popup-dialog input{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid black 4px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 15px;
+}
+.popup-dialog textarea{
+    background-color: transparent;
+    border: solid black 4px;
+    padding: 10px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.popup-dialog input::placeholder{
+    color: black;
+    font-size: larger;
+}
+.popup-dialog textarea::placeholder{
+    color: black;
+    font-size: larger;
+}
+.popup-dialog input:focus{
+    outline: none;
+}
+.popup-dialog textarea:focus{
+    outline: none;
+}
+.popup-dialog button{
+    color: white;
+    background-color: black;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: larger;
+}

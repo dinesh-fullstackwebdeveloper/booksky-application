@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>BookSky</h1>
+    </nav>
+    <div class="container">
+        <div class="book-container">
+            <h2>Book Title</h2>
+            <h5>Author Name</h5>
+            <p>Let tell about something about the book and the scenerios and the things learned from the book.</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-dialog">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea name="" placeholder="Book Description" id="book-description-input" rows="4"></textarea>
+            <button id="create-book">Add</button>
+            <button id="Close-popup">Close</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-button-popup">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
